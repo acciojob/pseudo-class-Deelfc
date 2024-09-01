@@ -1,6 +1,13 @@
-p:first-line{
-	color:rgb(255, 0, 0);
+#container{
+	margin:20px;
 }
-p:last-child{
-	color:rgb(255, 0, 0);
+#container::before{
+	content:"Before Element";
+	color:#f00;
+	font-size:20px;
+}
+#container::after{
+	color:#f00;
+	content:"After Element";
+	font-size:20px;
 }
