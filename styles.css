@@ -1,27 +1,6 @@
-#container {
-    margin: 20px;
-    position: relative; /* Ensure that pseudo-elements are positioned relative to this container */
-    padding: 20px; /* Optional: Adds space inside the container */
-    border: 1px solid #ccc; /* Optional: Adds a border to visualize the container */
+p:first-line{
+	color:rgb(255, 0, 0);
 }
-
-#container::before,
-#container::after {
-    content: "Special text";
-    color: #f00;
-    font-size: 20px;
-    position: absolute;
-    left: -120px; /* Adjust as necessary for proper positioning */
-    top: 50%;
-    transform: translateY(-50%); /* Center vertically */
-}
-
-#container::before {
-    content: "Before: Special text";
-    left: -200px; /* Adjust to place text before the container */
-}
-
-#container::after {
-    content: "After: Special text";
-    left: calc(100% + 20px); /* Adjust to place text after the container */
+p:last-child{
+	color:rgb(255, 0, 0);
 }
